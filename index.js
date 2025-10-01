@@ -46,3 +46,12 @@ const add = (n1, n2) => {
     }
 }
 // console.log(add(2, 4));
+
+const isNegative = (num) => {
+    if (num < 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//console.log(isNegative(0))
