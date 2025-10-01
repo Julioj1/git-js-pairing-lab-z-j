@@ -31,3 +31,9 @@ const untilNum = (n) => {
     }
 }
 untilNum(5);
+
+const multiply = (num1, num2) => {
+    let result = num1 * num2;
+    return result;
+}
+console.log(multiply(5, 5));
