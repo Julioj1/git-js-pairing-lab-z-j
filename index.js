@@ -5,7 +5,7 @@ const fiveToOneHundred = () => {
         console.log(i);
     }
 }
-fiveToOneHundred();
+// fiveToOneHundred();
 
 const multiplesOfThree = () => {
     for (let i = 1; i <= 100; i++) {
@@ -14,7 +14,7 @@ const multiplesOfThree = () => {
         }
     }
 }
-multiplesOfThree();
+// multiplesOfThree();
 
 const multipletimesOfThreeOrFive = () => {
     for (let i = 1; i <= 100; i++) {
@@ -23,17 +23,26 @@ const multipletimesOfThreeOrFive = () => {
         }
     }
 }
-multipletimesOfThreeOrFive();
+// multipletimesOfThreeOrFive();
 
 const untilNum = (n) => {
     for (let i = 1; i <= n; i++) {
         console.log(i)
     }
 }
-untilNum(5);
+// untilNum(5);
 
 const multiply = (num1, num2) => {
     let result = num1 * num2;
     return result;
 }
-console.log(multiply(5, 5));
+// console.log(multiply(5, 5));
+
+const add = (n1, n2) => {
+    if (n1 === n2) {
+        return (n1 + n2) * 3
+    } else {
+        return n1 + n2
+    }
+}
+// console.log(add(2, 4));
