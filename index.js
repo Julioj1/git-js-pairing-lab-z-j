@@ -68,4 +68,20 @@ const betweenTwentyAndFourty = (num) => {
         return false;
     }
 }
-console.log(betweenTwentyAndFourty(20))
+// console.log(betweenTwentyAndFourty(20))
+
+const largest = (n1, n2, n3) => {
+    if (n1 > n2 && n1 > n3) {
+        return n1
+    } else if (n2 > n1 && n2 > n3) {
+        return n2
+    } else {
+        return n3
+    }
+}
+// console.log(largest(4, 6, 8));
+
+
+
+//////////////////////////// BONUS /////////////////////////////////
+
