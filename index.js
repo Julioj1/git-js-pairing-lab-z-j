@@ -85,3 +85,31 @@ const largest = (n1, n2, n3) => {
 
 //////////////////////////// BONUS /////////////////////////////////
 
+const printTime = () => {
+    const now = new Date();
+    const timeOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    };
+    const time = now.toLocaleTimeString('en-US', timeOptions);
+    return time
+}
+console.log(printTime());
+
+
+//Write a function `getExtention` to get the extension of a filename.
+function getExtention(filename) {
+    const dotIndex = filename.lastIndexOf('.');
+
+    // If no dot is found or the dot is the first character (e.g., ".gitignore"),
+    // it implies no extension or a hidden file without a true extension.
+    if (dotIndex === -1 || dotIndex === 0) {
+        return ''; // Return an empty string for no extension
+    }
+
+    // Extract the substring after the last dot.
+    return filename.substring(dotIndex + 1);
+}
+getExtention(index.js);
