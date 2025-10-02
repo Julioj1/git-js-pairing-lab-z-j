@@ -108,6 +108,16 @@ const getExtention = (filename) => {
 }
 // console.log(getExtention("README.md"));
 
+const absoluteNineteen = (num) => {
+    let absoleteDifference = num - 19;
+    absoleteDifference = Math.abs(absoleteDifference);
+    if (absoleteDifference > 19) {
+        absoleteDifference *= 3;
+    }
+    return absoleteDifference;
+}
+// console.log(absoluteNineteen(-9))
+
 const switchLetters = (str) => {
     if (str.length > 1) {
         return str[str.length - 1] + str.substring(1, str.length - 1) + str[0];
@@ -116,3 +126,4 @@ const switchLetters = (str) => {
     }
 };
 // console.log(switchLetters(""));
+
