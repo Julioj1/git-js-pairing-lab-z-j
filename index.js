@@ -108,3 +108,12 @@ const getExtention = (filename) => {
 }
 // console.log(getExtention("README.md"));
 
+const absoluteNineteen = (num) => {
+    let absoleteDifference = num - 19;
+    absoleteDifference = Math.abs(absoleteDifference);
+    if (absoleteDifference > 19) {
+        absoleteDifference *= 3;
+    }
+    return absoleteDifference;
+}
+console.log(absoluteNineteen(-9))
