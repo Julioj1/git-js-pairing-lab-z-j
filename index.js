@@ -148,4 +148,4 @@ function changeString(str) {
     return result;
 }
 
-console.log(changeString("abcd"));
+// console.log(changeString("abcd"));
