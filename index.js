@@ -118,7 +118,7 @@ const absoluteNineteen = (num) => {
 }
 console.log(absoluteNineteen(-9))
 
-function chnageString(str) {
+function changeString(str) {
     var result = "";
     for (var i = 0; i < str.length; i++) {
         // handle "z"
@@ -139,4 +139,4 @@ function chnageString(str) {
     return result;
 }
 
-console.log(chnageString("abcd"));
+console.log(changeString("abcd"));
