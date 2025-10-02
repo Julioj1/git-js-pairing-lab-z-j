@@ -85,7 +85,26 @@ const largest = (n1, n2, n3) => {
 
 //////////////////////////// BONUS /////////////////////////////////
 
+const printTime = () => {
+    const now = new Date();
+    const timeOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    };
+    const time = now.toLocaleTimeString('en-US', timeOptions);
+    return time
+}
+// console.log(printTime());
+
 const isLeapYear = (year) => {
     return new Date(year, 1, 29).getDate() === 29;
 };
 // console.log(isLeapYear(2000));
+
+const getExtention = (filename) => {
+    return filename.split(".").pop();
+}
+// console.log(getExtention("README.md"));
+
