@@ -85,3 +85,67 @@ const largest = (n1, n2, n3) => {
 
 //////////////////////////// BONUS /////////////////////////////////
 
+const printTime = () => {
+    const now = new Date();
+    const timeOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    };
+    const time = now.toLocaleTimeString('en-US', timeOptions);
+    return time
+}
+// console.log(printTime());
+
+const isLeapYear = (year) => {
+    return new Date(year, 1, 29).getDate() === 29;
+};
+// console.log(isLeapYear(2000));
+
+const getExtention = (filename) => {
+    return filename.split(".").pop();
+}
+// console.log(getExtention("README.md"));
+
+const absoluteNineteen = (num) => {
+    let absoleteDifference = num - 19;
+    absoleteDifference = Math.abs(absoleteDifference);
+    if (absoleteDifference > 19) {
+        absoleteDifference *= 3;
+    }
+    return absoleteDifference;
+}
+// console.log(absoluteNineteen(-9))
+
+const switchLetters = (str) => {
+    if (str.length > 1) {
+        return str[str.length - 1] + str.substring(1, str.length - 1) + str[0];
+    } else {
+        return str
+    }
+};
+// console.log(switchLetters(""));
+
+function changeString(str) {
+    var result = "";
+    for (var i = 0; i < str.length; i++) {
+        // handle "z"
+        if (122 == str.charCodeAt(i)) {
+            result += "a";
+            // handle "Z"
+        } else if (90 == str.charCodeAt(i)) {
+            result += "A";
+            // handle all other letter characters
+        } else if ((65 <= str.charCodeAt(i) && str.charCodeAt(i) <= 89) ||
+            (97 <= str.charCodeAt(i) && str.charCodeAt(i) <= 121)) {
+            result += String.fromCharCode(str.charCodeAt(i) + 1);
+            // append all other characters unchanged
+        } else {
+            result += str.charAt(i);
+        }
+    }
+    return result;
+}
+
+// console.log(changeString("abcd"));
