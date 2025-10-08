@@ -62,7 +62,7 @@ const triangleArea = (h, b) => {
 //console.log(triangleArea(5, 7));
 
 const betweenTwentyAndFourty = (num) => {
-    if (num >= 20 && num <= 40) {
+    if (num > 20 && num < 40) {
         return true;
     } else {
         return false;
