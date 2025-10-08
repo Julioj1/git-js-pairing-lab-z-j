@@ -47,11 +47,11 @@ const add = (n1, n2) => {
 }
 // console.log(add(2, 4));
 
-const isNegative = (num) = num < 0;
+const isNegative = (num) => num < 0;
 //console.log(isNegative(0))
 
 const triangleArea = (h, b) => {
-    return (1 / 2) * b * h
+    return (b * h) / 2
 }
 //console.log(triangleArea(5, 7));
 
